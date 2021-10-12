@@ -1,0 +1,7 @@
+
+  <app-menu *ngIf="estado == false"></app-menu>
+
+  <app-login *ngIf="estado" (estado)="validar($event)" ></app-login>
+
+  <router-outlet></router-outlet>
+
